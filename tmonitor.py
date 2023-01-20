@@ -23,6 +23,8 @@ class MyStreamer(TwythonStreamer):
     def on_error(self, status_code, data):
         print status_code
         self.disconnect()
+        
+        "Introducing a bug at line 27"
 
 APP_KEY = ''
 APP_SECRET = ''
